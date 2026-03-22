@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Pokémons</title>
+</head>
+<body>
+    <h1>Pokémons cadastrados</h1>
+
+    <ul>
+        {% for pokemon in pokemons %}
+            <li>
+                {{ pokemon.nome }} - {{ pokemon.tipo }}
+            </li>
+        {% empty %}
+            <li>Nenhum Pokémon cadastrado</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/salvar/">Cadastrar novo Pokémon</a>
+</body>
+</html>

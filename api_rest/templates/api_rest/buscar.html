@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar Pokémon</title>
+</head>
+<body>
+    <h1>Buscar Pokémon</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="nome">
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>

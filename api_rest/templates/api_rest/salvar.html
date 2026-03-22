@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salvar Pokémon</title>
+</head>
+<body>
+    <h1>Cadastrar Pokémon</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label>Nome do Pokémon:</label>
+        <input type="text" name="nome">
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <a href="/listar/">Ver lista</a>
+</body>
+</html>
